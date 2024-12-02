@@ -26,7 +26,7 @@
             <div class="carousel-slide">
              
                 <div class="carousel-item">
-                    <img src="../izone/home.webp" alt="Banner Image 2">
+                    <img src="home.webp" alt="Banner Image 2">
                     <div class="carousel-caption">
                         <h2> WELCOME TO IZONE TECHNOLOGIES</h2>
                         <p>Transforming businesses with digital marketing services</p>
@@ -174,36 +174,6 @@
             <p>&copy; 2024 Your Company. All rights reserved.</p>
         </div>
     </footer>
-     <!-- JavaScript for the Carousel functionality -->
-     <script>
-        let slideIndex = 0;
-        
-        function moveSlide(n) {
-            showSlides(slideIndex += n);
-        }
-    
-        function showSlides(n) {
-            let slides = document.getElementsByClassName("carousel-item");
-            if (n >= slides.length) {
-                slideIndex = 0;
-            } else if (n < 0) {
-                slideIndex = slides.length - 1;
-            }
-            
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-    
-            slides[slideIndex].style.display = "block";  
-        }
-    
-        showSlides(slideIndex);
-        
-        // Auto-slide every 3 seconds
-        setInterval(function() {
-            moveSlide(1);
-        }, 3000);
-    </script>
     
     
 </body>
